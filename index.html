@@ -2,61 +2,10 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dane z Raspberry Pi</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #6dd5fa, #2980b9);
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    .value {
-      font-size: 48px;
-      font-weight: bold;
-    }
-
-    .timestamp {
-      font-size: 14px;
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-  </style>
+  <title>Test GitHub Pages</title>
 </head>
 <body>
-  <div class="card">
-    <h1>Ostatnia temperatura</h1>
-    <div class="value" id="temp">...</div>
-    <div class="timestamp" id="time">Ładowanie danych...</div>
-  </div>
-
-  <script>
-    fetch("https://twoje-api.onrender.com/latest")
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("temp").innerText = data.temperature + "°C";
-        document.getElementById("time").innerText = "Zmierzone: " + data.timestamp;
-      })
-      .catch(err => {
-        document.getElementById("temp").innerText = "Błąd 😢";
-        document.getElementById("time").innerText = "Nie udało się pobrać danych.";
-        console.error(err);
-      });
-  </script>
+  <h1>Witaj na mojej stronie!</h1>
+  <p>Działa z GitHub Pages 🎉</p>
 </body>
 </html>
